@@ -15,4 +15,14 @@
         app:layout_constraintTop_toBottomOf="parent"
         app:srcCompat="@drawable/ic_music_library_128dp" />
 
+    <SeekBar
+        android:id="@+id/seek_bar"
+        style="@android:style/Widget.Holo.Light.SeekBar"
+        android:layout_width="368dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="96dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/image_view_album_picture" />
+
 </android.support.constraint.ConstraintLayout>
