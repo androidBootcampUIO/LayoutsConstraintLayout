@@ -10,8 +10,8 @@
         android:id="@+id/image_view_album_picture"
         android:layout_width="256dp"
         android:layout_height="256dp"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="parent"
         app:srcCompat="@drawable/ic_music_library_128dp" />
 
@@ -21,8 +21,8 @@
         android:layout_width="368dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="96dp"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/image_view_album_picture" />
 
     <TextView
@@ -31,7 +31,7 @@
         android:layout_height="wrap_content"
         android:text="0:00"
         app:layout_constraintBottom_toTopOf="@+id/seek_bar"
-        app:layout_constraintLeft_toLeftOf="@+id/seek_bar" />
+        app:layout_constraintStart_toStartOf="@+id/seek_bar" />
 
     <TextView
         android:id="@+id/text_view_remaining_time"
@@ -39,7 +39,7 @@
         android:layout_height="wrap_content"
         android:text="3:40"
         app:layout_constraintBottom_toTopOf="@+id/seek_bar"
-        app:layout_constraintRight_toRightOf="@+id/seek_bar" />
+        app:layout_constraintEnd_toEndOf="@+id/seek_bar" />
 
     <android.support.constraint.Guideline
         android:layout_width="wrap_content"
@@ -54,7 +54,7 @@
         android:layout_height="wrap_content"
         app:srcCompat="@drawable/ic_play"
         app:layout_constraintTop_toTopOf="@+id/image_button_rewind"
-        app:layout_constraintRight_toLeftOf="@+id/guideline_horizontal_middle" />
+        app:layout_constraintEnd_toStartOf="@+id/guideline_horizontal_middle" />
 
     <ImageButton
         android:id="@+id/image_button_stop"
@@ -62,7 +62,7 @@
         android:layout_height="wrap_content"
         app:srcCompat="@drawable/ic_stop"
         app:layout_constraintTop_toTopOf="@+id/image_button_forward"
-        app:layout_constraintLeft_toRightOf="@+id/guideline_horizontal_middle" />
+        app:layout_constraintStart_toEndOf="@+id/guideline_horizontal_middle" />
 
     <ImageButton
         android:id="@+id/image_button_rewind"
@@ -70,7 +70,7 @@
         android:layout_height="wrap_content"
         app:srcCompat="@drawable/ic_rewind"
         app:layout_constraintTop_toBottomOf="@+id/seek_bar"
-        app:layout_constraintRight_toLeftOf="@+id/image_button_play" />
+        app:layout_constraintEnd_toStartOf="@+id/image_button_play" />
 
     <ImageButton
         android:id="@+id/image_button_forward"
@@ -78,6 +78,6 @@
         android:layout_height="wrap_content"
         app:srcCompat="@drawable/ic_forward"
         app:layout_constraintTop_toBottomOf="@+id/seek_bar"
-        app:layout_constraintLeft_toRightOf="@+id/image_button_stop" />
+        app:layout_constraintStart_toEndOf="@+id/image_button_stop" />
 
 </android.support.constraint.ConstraintLayout>
